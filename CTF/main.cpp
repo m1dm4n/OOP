@@ -23,7 +23,7 @@ int main()
     }
     for (size_t i = 0; i < UIT.size(); ++i)
     {
-        cout << "Quan quan cua
+        cout << "Quan quan cua:"
         UIT[i].QuanQuan().Xuat();
     }
     for (size_t i = 0; i < UIT.size(); ++i)
