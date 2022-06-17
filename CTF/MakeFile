@@ -1,6 +1,7 @@
 CC = g++
-CFLAGS = -Wall -g -std=c++20
+CFLAGS = -Wall -g -std=c++20 -I ./Header
 SOURCE_MAIN = Source/BaiThi.o Source/CuocThi.o Source/DoiChoi.o Source/Nguoi.o Source/NguoiChoi.o Source/NguoiRaDe.o main.o
+OBJECT = BaiThi.o CuocThi.o DoiChoi.o Nguoi.o NguoiChoi.o NguoiRaDe.o main.o
 PROGRAM_NAME = QuanLyCuocThi
 
 
@@ -10,7 +11,7 @@ PROGRAM_NAME = QuanLyCuocThi
 .cpp.o:
 	$(CC) $(CFLAGS) -c $?
 main: $(SOURCE_MAIN)
-	$(CC) $(CFLAGS) $(SOURCE_MAIN) -o $(PROGRAM_NAME)
+	$(CC) $(CFLAGS) $(OBJECT) -o $(PROGRAM_NAME)
 
 Post_compile:
 	mkdir ObjectCompiled
