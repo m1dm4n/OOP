@@ -9,7 +9,6 @@ class NguoiChoi : public Nguoi
 
 public:
     NguoiChoi(/* args */) {}
-    NguoiChoi(const string &_hoten, const string &_email, const string &_lop) : Nguoi(_hoten, _email), Lop(_lop) {}
     void Nhap();
     void Xuat() const;
     ~NguoiChoi() {}

@@ -43,7 +43,7 @@ private:
 
 
 public:
-    CuocThi(/* args */);
+    CuocThi(/* args */){}
     void Nhap();
     void Xuat() const;
     NguoiChoi* DangKyThanhVien();
@@ -54,7 +54,7 @@ public:
     NguoiRaDe ItGiaiDuocNhat() const;
     BaiThi *TimBaiThi(const string &);
     NguoiRaDe* TimBaiThiItNhat() const;
-    ~CuocThi();
+    ~CuocThi(){}
 };
 
 

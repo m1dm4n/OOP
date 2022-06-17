@@ -13,7 +13,6 @@ protected:
 
 public:
     Nguoi(/* args */) {}
-    Nguoi(const string &_hoten, const string &_email) : HoTen(_hoten), Email(_email) {}
     string GetHoTen() const;
     virtual void Nhap();
     virtual void Xuat() const;

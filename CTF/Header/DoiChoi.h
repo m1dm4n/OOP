@@ -47,17 +47,7 @@ private:
 
 public:
     DoiChoi(/* args */) : SoTV(0), TVToiDa(1) {} // Mac dinh la thi ca nhan
-    DoiChoi(string ten, vector<NguoiChoi *> tv, Rank type, size_t max) 
-    {
-        this->Ten = ten;
-        this->HangMuc = type;
-        this->TVToiDa = max;
-        this->SoTV = (tv.size() > max ? max : tv.size());
-        for (size_t i = 0; i < SoTV; ++i)
-            ThanhVien.push_back(tv[i]);
-        this->Diem = 0;
-        this->ThoiGian = 0;
-    }
+    DoiChoi(string ten, vector<NguoiChoi *> tv, Rank type, size_t max);
     void Xuat() const;
     bool KiemTraToiDaTV() const;
     void ThemThanhViem(NguoiChoi *);

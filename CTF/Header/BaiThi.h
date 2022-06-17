@@ -19,7 +19,6 @@ class BaiThi
 
 public:
     BaiThi(/* args */) {}
-    BaiThi(const string &TenBai, Category chude, const size_t &Diem, const size_t songuoigiai, const vector<string> &TaiNguyen, const string &GoiY, const string &DapAn, NguoiRaDe *TacGia);
     void Nhap();
     void Xuat() const;
     // string GetTenBai() const;
